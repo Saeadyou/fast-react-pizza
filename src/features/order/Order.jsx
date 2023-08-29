@@ -54,8 +54,6 @@ function Order() {
           <OrderItem
             key={item.id}
             item={item}
-            isLoadingIngredients=""
-            ingredients=""
           />
         ))}
       </ul>
