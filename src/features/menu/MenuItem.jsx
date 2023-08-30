@@ -40,7 +40,7 @@ function MenuItem({ pizza }) {
             <>
               <p className="text-sm">{formatCurrency(unitPrice)}</p>
               {cart.some((item) => item.pizzaId === id) ? (
-                <div className="flex gap-3 items-center sm:gap-8">
+                <div className="flex items-center gap-3 sm:gap-8">
                   <UpdateItemQuantity
                     pizzaId={id}
                     quantity={cart.find((item) => item.pizzaId === id).quantity}
